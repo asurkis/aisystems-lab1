@@ -20,9 +20,9 @@ parent(shelutko_arkady, shelutko_lev).
 parent(shelutko_zinaida, shelutko_lev).
 parent(ennenberg_heinrich, ennenberg_mikhail).
 parent(pavlov_philip, pavlova_valentina).
-parent(shelutko_nikita, shelutko_zinaida).
-parent(shelutko_nikita, shelutko_zoya).
-parent(shelutko_nikita, shelutko_nina).
+parent(obukhov_nikita, shelutko_zinaida).
+parent(obukhov_nikita, kuznetsova_zoya).
+parent(obukhov_nikita, obukhova_nina).
 
 male(surkis_anton).
 male(surkis_igor).
@@ -37,15 +37,15 @@ male(surkis_yakov).
 male(shelutko_arkady).
 male(ennenberg_heinrich).
 male(pavlov_philip).
-male(shelutko_nikita).
+male(obukhov_nikita).
 
 female(surkis_tanya).
 female(pavlova_olga).
 female(shelutko_ludmila).
 female(pavlova_valentina).
 female(shelutko_zinaida).
-female(shelutko_zoya).
-female(shelutko_nina).
+female(kuznetsova_zoya).
+female(obukhova_nina).
 
 predecessor(X, Y) :- parent(X, Y).
 predecessor(X, Y) :- parent(Z, Y), predecessor(X, Z).
